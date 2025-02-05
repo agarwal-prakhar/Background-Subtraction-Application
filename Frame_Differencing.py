@@ -43,7 +43,8 @@ while True:
     # assigning new new to the previous frame
     image1 = image2
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+
+    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
         break
 cap.release()
 cv2.destroyAllWindows()
