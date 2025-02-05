@@ -52,7 +52,8 @@ while cap.isOpened():
     res = cv2.bitwise_and(frame,frame,mask=res)
     cv2.imshow('median',res)
     cv2.imshow('background',background)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+
+    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
         break
     i = i+1
 cap.release()
