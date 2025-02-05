@@ -39,7 +39,7 @@ while True:
              
         cv2.imshow('forground',erode)
 
-    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
+        if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
         break
 
                 
