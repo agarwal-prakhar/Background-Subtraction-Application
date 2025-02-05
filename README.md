@@ -2,6 +2,13 @@
 
 This project demonstrates real-time **background subtraction** using the **mean frame technique**. It captures video from a webcam, computes the mean of the last 50 frames to estimate the background, and extracts the foreground by comparing the current frame with the computed background. A trackbar is provided to dynamically adjust the threshold for foreground detection.
 
+![SBA2](https://github.com/user-attachments/assets/a8f4cfca-dfdb-489e-afb5-31640e689e51)
+
+
+![SBA 6](https://github.com/user-attachments/assets/3c7a0ee4-524f-47b6-ab65-fe74b9e43c71)
+
+
+
 ## Features
 - Real-time background subtraction using a webcam feed.
 - Dynamic threshold adjustment using a trackbar.
