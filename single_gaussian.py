@@ -38,9 +38,10 @@ while True:
        # erode = cv2.absdiff(forground,background)
              
         cv2.imshow('forground',erode)
-        
-        if cv2.waitKey(5) & 0xFF == ord('q'):
-                break
+
+    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
+        break
+
                 
 cap.release()                
 cv2.destroyAllWindows()
