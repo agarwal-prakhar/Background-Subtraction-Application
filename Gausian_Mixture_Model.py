@@ -153,7 +153,7 @@ while cap.isOpened():
     cv2.imshow('frame_gray',frame_gray)
     
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
         break
 cap.release()
 cv2.destroyAllWindows()
