@@ -39,7 +39,8 @@ while cap.isOpened() :
     foreground = cv2.bitwise_and(frame1,frame1,mask=foreground)
     cv2.imshow('background',background)
     cv2.imshow('foreground',foreground)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+
+    if cv2.waitKey(1) & 0xFF == 27:  # Exit on pressing the ESC key
         break
 
 cap.release()
